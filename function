@@ -1,0 +1,12 @@
+///////////////////
+for (size_t i = 0; i < rows; i++)
+	{
+		for (size_t j = 0; j < cols - 1; j++)
+		{
+			for (size_t k = j + 1; k < cols; k++)
+			{
+				if (arr[i][j] < arr[i][k])
+					swap(arr[i][j], arr[i][k]);
+			}
+		}
+	}
